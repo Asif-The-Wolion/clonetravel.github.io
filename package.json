@@ -1,0 +1,19 @@
+{
+  "name": "trip-.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i input.css -o ./css/main.css --watch",
+    "build": "npx tailwindcss -i input.css -o ./css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.4"
+  },
+  "dependencies": {
+    "tw-elements": "^1.0.0-alpha12"
+  }
+}

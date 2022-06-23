@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <!-- js -->
+  <script src="node_modules/tw-elements/dist/js/index.min.js"></script>
+  <script src="node_modules/tw-elements/dist/bs-styles.js"></script>
+  <script src="node_modules/tw-elements/dist/plugin.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+    integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Ubuntu', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <!-- title -->
+  <title>trip clone</title>
+</head>
+
+<body >
+  <!-- small screen nav -->
+  <nav id="smaller-devices" class="md:hidden p-2 h-16 bg-blue-500 text-white flex justify-between">
+    <div id="menubar" class="flex items-center p-4 text-2xl">
+      TRAVEL.COM ®
+    </div>
+
+    <div id="logo-dropdown">
+      <div class="flex justify-end items-center">
+        <div>
+          <div class="dropdown relative">
+            <a class="
+                dropdown-toggle
+                px-9
+                py-2
+                
+                text-white
+                font-medium
+                text-4xl
+                leading-tight
+                uppercase
+                rounded
+               
+                hover:text-emerald-300 
+                transition
+                duration-150
+                ease-in-out
+                flex
+                items-left
+                whitespace-nowrap
+              " href="#" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+            <ul class="
+                dropdown-menu
+                min-w-max
+                absolute
+                hidden
+                bg-blue-500
+                text-xl
+                z-50
+                float-left
+                py-2
+                list-none
+                text-left
+                pr-72
+                px-5
+                capitalize
+                items-center
+                shadow-lg
+                
+                mt-0
+                hidden
+                m-0
+                bg-clip-padding
+                border-none
+              " aria-labelledby="dropdownMenuButton2">
+              <li class="">
+                <a class="
+                  dropdown-item
+                  text-xl
+                  py-2
+                  flex
+                  items-center
+                  font-normal
+                  block
+                  w-full
+                  whitespace-nowrap
+                  bg-blue-500
+                  text-blue-300
+                  hover:bg-blue-200
+                " href="#">Hotel</a>
+              </li>
+              <li class="">
+                <a class="
+                  dropdown-item
+                  text-xl
+                  py-2
+                  
+                  font-normal
+                  block
+                  w-full
+                  whitespace-nowrap
+                  bg-blue-500
+                  text-blue-300
+                  hover:bg-blue-200
+                " href="#">cars</a>
+              </li>
+              <li>
+                <a class="
+                    dropdown-item
+                    text-xl
+                    py-2
+                    font-normal
+                    block
+                    w-full
+                    whitespace-nowrap
+                    bg-blue-500
+                    text-blue-300
+                    hover:bg-blue-200
+                  " href="#">flight</a>
+              </li>
+              <li class="">
+                <a class="
+                    dropdown-item
+                    text-xl
+                    py-2
+                    
+                    font-normal
+                    block
+                    w-full
+                    whitespace-nowrap
+                    bg-blue-500
+                    text-blue-300
+                    hover:bg-blue-200
+                  " href="#">cars</a>
+              </li>
+              <li class="">
+                <a class="
+                    dropdown-item
+                    text-xl
+                    py-2
+                    
+                    font-normal
+                    block
+                    w-full
+                    whitespace-nowrap
+                    bg-blue-500
+                    text-blue-300
+                    hover:bg-blue-200
+                  " href="#">Vacation</a>
+              </li>
+              <li class="">
+                <a class="
+                    dropdown-item
+                    text-xl
+                    py-2
+                    
+                    font-normal
+                    block
+                    w-full
+                    whitespace-nowrap
+                    bg-blue-500
+                    text-blue-300
+                    hover:bg-blue-200
+                  " href="#">tour and activities</a>
+              </li>
+              <li class="">
+                <a class="
+                    dropdown-item
+                    text-xl
+                    py-2
+                    
+                    font-normal
+                    block
+                    w-full
+                    whitespace-nowrap
+                    bg-blue-500
+                    text-blue-300
+                    hover:bg-blue-200
+                  " href="#">community</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- big screen nav -->
+  <nav id="big-device" class="hidden md:flex px-2 bg-blue-500 text-white">
+    <div id="menubar" class="flex items-center p-4 text-2xl">
+      TRAVEL.COM ®
+    </div>
+    <div class="flex items-center space-x-2 ml-10 text-xl text-blue-300">
+      <div>Hotel</div>
+      <div>flights</div>
+      <div>cars</div>
+      <div>vacation</div>
+      <div>Tours & Activities</div>
+      <div>Community</div>
+    </div>
+  </nav>
+<!-- header -->
+<header  class="bg-[url('/imgs/backMaldives.jpg')] bg-cover">
+<div id="intro-text" class="pt-5 grid items-center justify-center">Book hotels in 90+ currencies</div>
+<div id="icon link" class="flex justify-center p-2 space-x-8 text-blue-500 text-4xl">
+  <div id="bed"><i class="fas fa-bed"></i></div>
+  <div id="plane"><i class="fa-solid fa-plane"></i></div>
+  <div id="suitcase"><i class="fa-solid fa-suitcase-rolling"></i></div>
+  <div id="car"><i class="fa-solid fa-car"></i></div>
+  <div id="maps"><i class="fa-solid fa-map-location-dot"></i></div>
+</div>
+<div class="flex justify-center items-center text-xs">mobile user double click icons</div>
+<!-- under section -->
+<div class="pt-72">
+  <div class="pt-2">
+    <a href="#" class="bg-sky-700 text-white pt5 flex justify-center bg-gradient-to-br h-14 items-center from-blue-900 to-blue-600">
+      ✓ Special Hotel Deals / Sales
+  </a>
+  </div>
+  <div class="pt-2">
+    <a href="#" class="bg-sky-700 text-white pt5 flex justify-center bg-gradient-to-br h-14 items-center from-blue-900 to-blue-600">
+      ✓ Popular Destinations 
+  </a>
+  </div>
+  <div class="pt-2">
+    <a href="#" class="bg-sky-700 text-white pt5 flex justify-center bg-gradient-to-br h-14 items-center from-blue-900 to-blue-600">
+      <i class="fa-solid fa-magnifying-glass"></i> Search Cities Worldwide
+  </a>
+  </div>
+      
+<!-- <div>✓ Popular Destinations ✓ Special Hotel Deals / Sales</div>
+<div> <i class="fa-solid fa-magnifying-glass"></i> Search Cities Worldwide</div> -->
+</div>
+
+<!-- footer -->
+<div class="bg-black opacity-40 text-white pt-8 px-8">
+  <div class="text-sky-600">  🌐 <a href="">GeoLocate</a> | <a href="">Community </a>| <a href="">Updates</a></div>
+<div class="grid justify-start text-start">Usage of this website constitutes acceptance of the website's User Agreement and Privacy Policy:
+</div>
+<div class="text-sky-600">
+  About | Contact | User Agreement | Privacy Policy
+</div>
+
+</div>
+</header>
+
+
+  <!-- js section -->
+  <script src="node_modules/tw-elements/dist/js/index.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+
+</html>
